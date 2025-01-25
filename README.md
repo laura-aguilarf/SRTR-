@@ -10,14 +10,14 @@ SRTR Research Projects
 
 
 2. DONOR DISPOSITION: This file contains the organ dispositions for each organ for each recovered deceased donor.
-https://github.com/laura-aguilarf/SRTR-/blob/main/Data_dic_pict/DONOR%20DISPOSITION.png
+
 
 There potentially 11 different "organs" from a donor given the 16 different possible ways of recovering organs. See the variable "DON_ORG" for the list.
 
 There are 7 different possible dispositions for each organ type. The variable "DON_DISPOSITION" contains this value.
 
 3. FOL_IMMUNO: Data about immunosupression medications being given a transplant recipient durint the follow up period associated with them. One record per med, merge to the various TRF SAFs by key 'TRR_FOL_ID'.
-
+![FOL_IMMUN.png]
 
 4. HIST_OPO_TXC: History of affiliation of Organ Procurement Organizations with Transplant Centers.
 
