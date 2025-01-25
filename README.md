@@ -17,6 +17,7 @@ There are 7 different possible dispositions for each organ type. The variable "D
 4. General > HIST_OPO_TXC: History of affiliation of Organ Procurement Organizations with Transplant Centers.
 
 5. General > IMMUNO: Data about immunosupression medications being given a transplant recipient at the time of transplant
+   
 <img width="824" alt="Screenshot 2025-01-25 at 11 45 42" src="https://github.com/user-attachments/assets/a97cb095-9157-491a-bf21-47715ceca73b" />
 
 
