@@ -6,9 +6,11 @@ SRTR Research Projects
 
 # General 
 
-1. DONOR_DECEASED: All Deceased Donor Information 
+1. DONOR_DECEASED: All Deceased Donor Information
+
 
 2. DONOR DISPOSITION: This file contains the organ dispositions for each organ for each recovered deceased donor.
+https://github.com/laura-aguilarf/SRTR-/blob/main/Data_dic_pict/DONOR%20DISPOSITION.png
 
 There potentially 11 different "organs" from a donor given the 16 different possible ways of recovering organs. See the variable "DON_ORG" for the list.
 
