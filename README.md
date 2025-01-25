@@ -18,7 +18,7 @@ There are 7 different possible dispositions for each organ type. The variable "D
 
 3. FOL_IMMUNO: Data about immunosupression medications being given a transplant recipient durint the follow up period associated with them. One record per med, merge to the various TRF SAFs by key 'TRR_FOL_ID'.
    
-![FOL_IMMUN.png](SRTR/Data_dic_pict/FOL_IMMUN.png)
+![FOL_IMMUN](Data_dic_pict/FOL_IMMUN.png)
 
 5. HIST_OPO_TXC: History of affiliation of Organ Procurement Organizations with Transplant Centers.
 
