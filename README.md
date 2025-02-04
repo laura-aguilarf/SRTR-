@@ -1,8 +1,10 @@
 # SRTR
+Data dictionary online: https://www.srtr.org/requesting-srtr-data/saf-data-dictionary/
 
 SRTR Research Projects 
 
 # Data forms of interest 
+![FOL_IMMUN](Data_dic_pict/SAFsLinkingDiagram.png) 
 
 # General 
 
@@ -20,38 +22,90 @@ There are 7 different possible dispositions for each organ type. The variable "D
    
 ![FOL_IMMUN](Data_dic_pict/FOL_IMMUN.png)
 
-5. HIST_OPO_TXC: History of affiliation of Organ Procurement Organizations with Transplant Centers.
+4. HIST_OPO_TXC: History of affiliation of Organ Procurement Organizations with Transplant Centers.
    ![FOL_IMMUN](Data_dic_pict/HIST_OPO_TXC.png)
 
-7. IMMUNO: Data about immunosupression medications being given a transplant recipient at the time of transplant
+5. IMMUNO: Data about immunosupression medications being given a transplant recipient at the time of transplant
    ![FOL_IMMUN](Data_dic_pict/IMMUNO.png)
 
-9. INSTITUTION: Data of all the institutions. Link with center code/ center type combination
+6. INSTITUTION: Data of all the institutions. Link with center code/ center type combination
     ![FOL_IMMUN](Data_dic_pict/INSTITUTION.png)
 
-11. MALIG: Malignancies during the Follow up period. Merge with the various TXF SAFs by key 'TRR_FOL_ID'
+7. MALIG: Malignancies during the Follow up period. Merge with the various TXF SAFs by key 'TRR_FOL_ID'
     ![FOL_IMMUN](Data_dic_pict/MALIG1.png)
       ![FOL_IMMUN](Data_dic_pict/MALIG3.png)
 
-13. REC_HISTO: This file contains one record for the recipient histocompatability lab results for each transplant performed. Merge with file ALLORG.REC_HISTO_XMAT by key, REC_HISTO_TX_ID. Merge to the appropriate transplant record by key, REC_HISTO_TX_ID.
+8. REC_HISTO: This file contains one record for the recipient histocompatability lab results for each transplant performed. Merge with file ALLORG.REC_HISTO_XMAT by key, REC_HISTO_TX_ID. Merge to the appropriate transplant record by key, REC_HISTO_TX_ID.
     ![FOL_IMMUN](Data_dic_pict/REC_HISTO1.png)
      ![FOL_IMMUN](Data_dic_pict/REC_HISTO2.png)
      ![FOL_IMMUN](Data_dic_pict/REC_HISTO3.png)
 
 
 
-15.  TREATMENT: This file contains treatment data for each De Nova Solid tumor reported on the ALLORG.MALIG record. Merge by key, MALIG_ID.
+9.  TREATMENT: This file contains treatment data for each De Nova Solid tumor reported on the ALLORG.MALIG record. Merge by key, MALIG_ID.
     ![FOL_IMMUN](Data_dic_pict/TREATMENT.png)
 
 
-# HEART AND LUNGS 
+# HEART 
 
 1. CAND_THOR: The candidates table includes persons who are registered on the OPTN waiting list as well as additional candidates who have received a living donor organ, even if they have never been placed on the waiting list. The vast majority of candidate information comes from the candidate registration and waiting list information collected by the OPTN. Presents information about candidates during the time they are waiting to receive an organ.
 
 Contains one record per registration; if a person is registered on more than one center's waiting list, he or she is multiply included.
 
 Link by px_id to transplants (TX file) that are a direct result of this registration.
+![FOL_IMMUN](Data_dic_pict/CAND_THOR1.png)
+![FOL_IMMUN](Data_dic_pict/CAND_THOR2.png)
+![FOL_IMMUN](Data_dic_pict/CAND_THOR3.png)
+![FOL_IMMUN](Data_dic_pict/CAND_THOR4.png) 
 
+	
+2. STATHIST_THOR
+For each registration on the waiting list, at least one record exists in the STATHIST (status history) table. This table records characteristics that may change during the course of waiting list tenure, such as medical urgency status or model for end-stage liver disease (MELD) score for liver candidates. Each record in this table is associated with a time at which those characteristics began and ended.
+
+The STATHIST table is created by examining histories of changes to the operational waiting list, recording all changes that involve these variables of interest, and augmenting this file with non-overlapping start- and end-dates for the span of each set of characteristics.
+![FOL_IMMUN](Data_dic_pict/STATHIST_THOR.png) 
+
+Link to the CAND file by wl_id.
+
+3. STATJUST_HR1A
+![FOL_IMMUN](Data_dic_pict/STATJUST_HR1A.png)
+![FOL_IMMUN](Data_dic_pict/STATJUST_HR2A.png)
+![FOL_IMMUN](Data_dic_pict/STATJUST_HR3A.png)
+![FOL_IMMUN](Data_dic_pict/STATJUST_HR4A.png)
+![FOL_IMMUN](Data_dic_pict/STATJUST_HR5A.png) 
+
+5. STATJUST_HR1B
+![FOL_IMMUN](Data_dic_pict/STATJUST_HR1B.png) 
+
+
+7. TXF_HR
+For each transplant, a record at 1 year and then annually, post transplant until the recipient is re-transplanted, dies, or is lost to followup.
+
+Information from the Transplant Recipient Followup (TRF) form, including characteristics of the patient at the time of followup and during the period since the transplant (1 yr) or last followup (all others). The variable TFL_FOL_CD indicates which followup period the record represents.
+
+If the record shows TFL_IMMUNO = Y, immunosuppresion data for the followup period is available in LIIN.FOL_IMMUNO, linked by key, TRR_FOL_ID. If the record shows TFL_MALIG = Y, malignancy data diagnosed during the followup period is available in ALLORG.MALIG, linked by key, TRR_FOL_ID.
+
+Link to transplant records (TX_org) using trr_id.
+![FOL_IMMUN](Data_dic_pict/TXF_HR1.png) 
+![FOL_IMMUN](Data_dic_pict/TXF_HR2.png) 
+![FOL_IMMUN](Data_dic_pict/TXF_HR3.png) 
+
+6. TX_HR
+One record per transplant.
+
+Information from the Transplant Recipient Registration (TRR) form, including characteristics of the patient at the time of transplant and the transplant operation itself. For ease of analysis, characteristics of the donor are added, as well as donor-recipient interactions, such as calculated HLA mismatch scores, blood compatibilities, and whether the organ was "shared," based on the relationship between the organ procurement organization (OPO) recovering the organ and the transplant center.
+
+The TX table also includes summarized information from the transplant follow-ups, such as patient status information from the last transplant follow-up filed, to enable survival analyses.
+
+Link to follow-up records (TXF_org) using trr_id. Link to CAND files using px_id. Link to donor records using don_id.
+
+![FOL_IMMUN](Data_dic_pict/TX_HR1.png) 
+![FOL_IMMUN](Data_dic_pict/TX_HR2.png) 
+![FOL_IMMUN](Data_dic_pict/TX_HR3.png) 
+![FOL_IMMUN](Data_dic_pict/TX_HR4.png) 
+![FOL_IMMUN](Data_dic_pict/TX_HR5.png) 
+![FOL_IMMUN](Data_dic_pict/TX_HR6.png) 
+![FOL_IMMUN](Data_dic_pict/TX_HR7.png) 
 
 
 
