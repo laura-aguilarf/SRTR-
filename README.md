@@ -24,16 +24,24 @@ There are 7 different possible dispositions for each organ type. The variable "D
    ![FOL_IMMUN](Data_dic_pict/HIST_OPO_TXC.png)
 
 7. IMMUNO: Data about immunosupression medications being given a transplant recipient at the time of transplant
+   ![FOL_IMMUN](Data_dic_pict/IMMUNO.png)
 
-8. INSTITUTION: Data of all the institutions. Link with center code/ center type combination
+9. INSTITUTION: Data of all the institutions. Link with center code/ center type combination
+    ![FOL_IMMUN](Data_dic_pict/INSTITUTION.png)
 
-9. MALIG: Malignancies during the Follow up period. Merge with the various TXF SAFs by key 'TRR_FOL_ID'
+11. MALIG: Malignancies during the Follow up period. Merge with the various TXF SAFs by key 'TRR_FOL_ID'
+    ![FOL_IMMUN](Data_dic_pict/MALIG1.png)
+      ![FOL_IMMUN](Data_dic_pict/MALIG3.png)
 
-10. REC_HISTO: This file contains one record for the recipient histocompatability lab results for each transplant performed. Merge with file ALLORG.REC_HISTO_XMAT by key, REC_HISTO_TX_ID. Merge to the appropriate transplant record by key, REC_HISTO_TX_ID.
+13. REC_HISTO: This file contains one record for the recipient histocompatability lab results for each transplant performed. Merge with file ALLORG.REC_HISTO_XMAT by key, REC_HISTO_TX_ID. Merge to the appropriate transplant record by key, REC_HISTO_TX_ID.
+    ![FOL_IMMUN](Data_dic_pict/REC_HISTO1.png)
+     ![FOL_IMMUN](Data_dic_pict/REC_HISTO2.png)
+     ![FOL_IMMUN](Data_dic_pict/REC_HISTO3.png)
 
 
 
-11.  TREATMENT: This file contains treatment data for each De Nova Solid tumor reported on the ALLORG.MALIG record. Merge by key, MALIG_ID.
+15.  TREATMENT: This file contains treatment data for each De Nova Solid tumor reported on the ALLORG.MALIG record. Merge by key, MALIG_ID.
+    ![FOL_IMMUN](Data_dic_pict/TREATMENT.png)
 
 
 # HEART AND LUNGS 
