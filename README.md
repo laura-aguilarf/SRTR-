@@ -53,7 +53,7 @@ There are 7 different possible dispositions for each organ type. The variable "D
 Contains one record per registration; if a person is registered on more than one center's waiting list, he or she is multiply included.
 
 Link by px_id to transplants (TX file) that are a direct result of this registration.
-![FOL_IMMUN](Data_dic_pict/CAND_THOR1.png)
+![CAND_THOR1](Data_dic_pict/CAND_THOR1.png)
 ![FOL_IMMUN](Data_dic_pict/CAND_THOR2.png)
 ![FOL_IMMUN](Data_dic_pict/CAND_THOR3.png)
 ![FOL_IMMUN](Data_dic_pict/CAND_THOR4.png) 
