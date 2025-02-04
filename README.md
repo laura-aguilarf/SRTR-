@@ -21,18 +21,19 @@ There are 7 different possible dispositions for each organ type. The variable "D
 ![FOL_IMMUN](Data_dic_pict/FOL_IMMUN.png)
 
 5. HIST_OPO_TXC: History of affiliation of Organ Procurement Organizations with Transplant Centers.
+   ![FOL_IMMUN](Data_dic_pict/HIST_OPO_TXC.png)
 
-6. IMMUNO: Data about immunosupression medications being given a transplant recipient at the time of transplant
+7. IMMUNO: Data about immunosupression medications being given a transplant recipient at the time of transplant
 
-7. INSTITUTION: Data of all the institutions. Link with center code/ center type combination
+8. INSTITUTION: Data of all the institutions. Link with center code/ center type combination
 
-8. MALIG: Malignancies during the Follow up period. Merge with the various TXF SAFs by key 'TRR_FOL_ID'
+9. MALIG: Malignancies during the Follow up period. Merge with the various TXF SAFs by key 'TRR_FOL_ID'
 
-9. REC_HISTO: This file contains one record for the recipient histocompatability lab results for each transplant performed. Merge with file ALLORG.REC_HISTO_XMAT by key, REC_HISTO_TX_ID. Merge to the appropriate transplant record by key, REC_HISTO_TX_ID.
+10. REC_HISTO: This file contains one record for the recipient histocompatability lab results for each transplant performed. Merge with file ALLORG.REC_HISTO_XMAT by key, REC_HISTO_TX_ID. Merge to the appropriate transplant record by key, REC_HISTO_TX_ID.
 
 
 
-10.  TREATMENT: This file contains treatment data for each De Nova Solid tumor reported on the ALLORG.MALIG record. Merge by key, MALIG_ID.
+11.  TREATMENT: This file contains treatment data for each De Nova Solid tumor reported on the ALLORG.MALIG record. Merge by key, MALIG_ID.
 
 
 # HEART AND LUNGS 
