@@ -40,6 +40,11 @@ PGD in DCD heart recipients compared to DBD recipients.
 
 <a href="Articles/presentation_proposal_PGD.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
 
+[Download the PDF](https://github.com/laura-aguilarf/SRTR-/blob/main/Articles/presentation_proposal_PGD.pdf)
+
+
+
+
 
 # Data forms of interest 
 ![FOL_IMMUN](Data_dic_pict/SAFsLinkingDiagram.png) 
