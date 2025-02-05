@@ -38,6 +38,7 @@ Hypothesis: Differences in ischemic time and center experience significantly inf
 PGD in DCD heart recipients compared to DBD recipients.
 
 ![Presentation_PGD](Articles/presentation_proposal_PGD.pdf) 
+![FOL_IMMUN](Articles/presentation_proposal_PGD.pdf) 
 
 
 # Data forms of interest 
