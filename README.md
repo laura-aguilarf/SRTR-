@@ -37,7 +37,8 @@ heart transplants, such as donor characteristics, ischemic time, and center expe
 Hypothesis: Differences in ischemic time and center experience significantly influence the risk of
 PGD in DCD heart recipients compared to DBD recipients.
 
-<object data="presentation_proposal_PGD" width="1000" height="1000" type='application/pdf'/>
+
+<a href="Articles/presentation_proposal_PGD.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
 
 
 # Data forms of interest 
