@@ -1,5 +1,41 @@
 # SRTR
+
+
+# Practicum Title: Primary Graft Dysfunction Following Heart Transplantation from Donation After Circulatory Death versus Donation After Brain Death: An Analysis of the Scientific Registry of Transplant Recipients
+
+# Background and public health relevance
+Primary graft dysfunction (PGD) is the leading cause of early mortality within the first 30 days
+after heart transplantation, resulting in poor post-transplant outcomes and significant challenges
+for patient care. Although the International Society for Heart and Lung Transplantation (ISHLT)
+has developed a consensus-based classification system for PGD, transplant centers continue to
+refine its definition to improve clinical application and standardization. Reported PGD incidence
+varies widely, ranging from 2.3% to 28.2% in single-center studies, reflecting variability in
+definitions and practices. As the use of hearts donated after circulatory death (DCD) grows to
+address organ shortages, concerns have emerged regarding increased risks of PGD in this donor
+category, particularly in centers newly adopting DCD protocols. However, limited data currently
+exist to substantiate these associations. Understanding the incidence, outcomes, and potential
+risks of PGD in DCD versus donation after brain death (DBD) hearts is essential to improving
+patient outcomes and guiding the safe and effective expansion of the donor pool.
+
 Data dictionary online: https://www.srtr.org/requesting-srtr-data/saf-data-dictionary/
+
+# Specific aims/hypotheses
+
+Specific Aim 1: To compare the incidence and severity of primary graft dysfunction (PGD)
+between heart transplant recipients who received hearts from donation after circulatory death
+(DCD) and donation after brain death (DBD).
+Hypothesis: Heart transplant recipients of DCD hearts have a higher incidence and severity of
+PGD compared to recipients of DBD hearts.
+
+Specific Aim 2: To evaluate the short-term and long-term outcomes of heart transplant recipients
+with PGD, stratified by DCD and DBD donor status.
+Hypothesis: Recipients with PGD following transplantation from DCD hearts experience worse
+short-term and long-term outcomes compared to those receiving DBD hearts.
+
+Specific Aim 3: To identify factors that mediate or modify the risk of PGD in DCD versus DBD
+heart transplants, such as donor characteristics, ischemic time, and center experience.
+Hypothesis: Differences in ischemic time and center experience significantly influence the risk of
+PGD in DCD heart recipients compared to DBD recipients.
 
 SRTR Research Projects 
 
