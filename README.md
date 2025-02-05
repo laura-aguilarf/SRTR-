@@ -17,7 +17,7 @@ exist to substantiate these associations. Understanding the incidence, outcomes,
 risks of PGD in DCD versus donation after brain death (DBD) hearts is essential to improving
 patient outcomes and guiding the safe and effective expansion of the donor pool.
 
-Data dictionary online: https://www.srtr.org/requesting-srtr-data/saf-data-dictionary/
+
 
 # Specific aims/hypotheses
 
@@ -37,10 +37,11 @@ heart transplants, such as donor characteristics, ischemic time, and center expe
 Hypothesis: Differences in ischemic time and center experience significantly influence the risk of
 PGD in DCD heart recipients compared to DBD recipients.
 
-SRTR Research Projects 
+
 
 # Data forms of interest 
 ![FOL_IMMUN](Data_dic_pict/SAFsLinkingDiagram.png) 
+Data dictionary online: https://www.srtr.org/requesting-srtr-data/saf-data-dictionary/
 
 # General 
 
